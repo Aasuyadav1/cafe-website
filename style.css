@@ -1,0 +1,440 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+p{
+    font-family: 'Poppins', sans-serif;
+}
+h2{
+    font-family: 'Merriweather', serif;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    height: 80px;
+    width: 100%;
+    background-color: rgba(10, 10, 10, 0.62);
+    position: fixed;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; 
+}
+nav ul li{
+    padding: 5px;
+}
+nav input[type="checkbox"]{
+    display: none;
+}
+nav ul li a{
+    font-size: 2rem;
+    color: rgb(198,148,98);
+     padding:5px;   
+    transition: all 0.3s ease-in-out;
+    border-bottom: 4px solid transparent;
+}
+nav label i{
+    display: none; 
+    font-size: 3rem;
+    color: rgb(198,148,98);
+}
+
+nav ul li a:hover{
+    border-bottom: 4px solid rgb(198,148,98);
+    transition: all 0.3s ease-in-out;
+}
+@media (max-width:600px) {
+    nav label i{
+        display: block;
+        position: absolute;
+        top: 13px;
+        right: 5px;
+    }
+    nav ul{
+        display: block;
+        margin-top: 295px;
+        position: relative;
+        right: -100%;
+        text-align: center;
+        padding: 10px;
+        background-color: rgba(10, 10, 10, 0.62);
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    #toggle:checked ~ ul{
+        right: 0;
+    }
+}
+section{
+    background-image: url(img/antique-cafe-bg-01.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment:fixed;
+    min-height: 1150px; 
+    
+}
+/* section 1 satrted forme here */
+.box-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh;
+    width: 100vw; */
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    max-width: 436px;
+    color: white;
+    gap: 30px;
+    margin-top: 300px;
+    justify-content: center;
+    padding: 5px;
+}
+.box-header{
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    height: 270px;
+    /* width: 500px; */
+    background-color: rgba(24, 19, 18, 0.857);
+    opacity: 7;
+    border-radius: 10px;
+}
+.box-header h2{
+    font-size: 3rem;
+}
+.box-header p{
+    color: rgb(201,151,100);
+}
+.box-para{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: rgba(24, 19, 18, 0.857);
+    border-radius: 10px;
+}
+.box-para p{
+    line-height: 2;
+    color: rgb(205,201,198);
+}
+.box-button{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center; 
+    background-color: rgba(24, 19, 18, 0.857);
+    border-radius: 10px;
+    padding: 20px 20px;
+    width: 50%;
+    text-align: center;
+    color: rgb(201,151,100);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.box-button:hover{
+    color: white;
+}
+.box-btn{
+    display: flex;
+    justify-content: center;
+}
+/* section 2 started frome herer */
+.section2-img{
+    background-image: url(img/antique-cafe-bg-02.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment:fixed;
+    min-height: 1200px;
+     display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    padding: 10px;
+    color: white;
+   
+}
+.section2-box-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section2-box-image img{
+    border-radius: 10px;
+}
+.section2-content{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    padding: 50px;
+   
+}
+.section2-box-1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgb(84,70,57);
+    padding: 20px 20px;
+    border-radius: 20px;
+}
+.section2-box1{
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+.section2-box-content h1{
+    margin: 10px 0;
+    color: rgb(238,190,97);
+}
+.section2-box-content p{
+    margin: 5px 0;
+}
+.section2-header{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.section2-header p{
+    text-align: center;
+    color: black;
+    background-color: white;
+    padding: 20px 30px;
+    font-size: 2rem;
+    border-radius: 10px;
+}
+@media (max-width:450px) {
+    .section2-box1{
+        flex-direction: column;
+    }
+    .section2-box-content{
+        text-align: center;
+    }
+    .section2-img{
+        height: 100%;
+    }
+}
+@media (max-width:1125) {
+    .section2-img{
+        height: 100%;
+    }
+}
+/* section three started frome here */
+.section3-img{
+    background-image: url(img/antique-cafe-bg-03.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment:fixed;
+    min-height: 900px;
+    display: flex;
+    padding: 10px; 
+    align-items: center;
+}
+.section3-box{
+    color: black;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.section3-content{
+    max-width: 500px;
+    margin: 0 50px;
+}
+.section3-content h1{
+    font-size: 3rem;
+    margin-block: 10px;
+    color: rgb(0,102,102);
+}
+.section3-content p{
+    line-height: 2.3;
+}
+.section3-content button{
+    margin-block: 15px;
+    font-size: 1rem;
+    padding: 20px 60px;
+    background-color: rgb(0,102,102);
+    cursor: pointer;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+.section3-content button:hover{
+    background-color: rgb(16, 157, 157);
+}
+.section3-content button i{
+    font-size: 1rem;
+    padding-right: 10px;
+}
+.section3-header-content{
+    background-color: rgba(226, 228, 228, 0.797);
+    border-radius: 10px;
+    padding: 10px 20px; 
+}
+@media (max-width:600px) {
+    .section3-img .section3-content{
+        margin: 0;
+    }
+}
+/* section 4 started frome here */
+.section4-img{
+    background-image: url(img/antique-cafe-bg-04.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment:fixed;
+    min-height: 1000px;
+    display: flex;
+    padding: 10px; 
+    justify-content: center;
+    align-items: center;
+}
+.section4-box{
+    display: flex;
+    gap: 30px; 
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.section4-contract-us{
+     max-width: 500px;
+     background-color: rgba(226, 228, 228, 0.843);
+     border-radius: 10px;
+     padding: 10px 20px; 
+}
+.section4-form{
+    max-width: 1000px;
+    padding: 20px 30px;
+    background-color: rgba(22, 15, 11, 0.855);
+    border-radius: 10px;
+}
+input[type="text"]{
+    margin: 10px;
+}
+input[type="email"]{
+    margin: 10px;
+}
+input[type="email"]{
+    margin: 10px;
+}
+textarea[name="Message"]{
+    margin: 10px;
+}
+input[type="text"]:focus{
+    border: 2px solid rgb(204,153,102);
+    box-shadow: rgb(252, 184, 117) 0px 0px 29px 0px;
+}
+input[type="email"]:focus{
+    border: 2px solid rgb(204,153,102);
+    box-shadow: rgb(252, 184, 117) 0px 0px 29px 0px;
+}
+.section4-form input{
+   box-sizing: border-box;
+    font-size: 1.5rem;
+    color: white;
+    width: 100%; 
+    background-color: transparent;
+    border-color: rgb(204,153,102);
+    border: none;
+    border: 2px solid transparent;
+    border-bottom: 2px solid rgb(204,153,102);
+    padding: 5px 20px;
+    outline: none;
+}
+input::placeholder{
+    color: rgba(255, 255, 255, 0.828);
+    font-size: 1.2rem;
+}
+textarea::placeholder{
+    color: rgba(255, 255, 255, 0.828);
+    font-size: 1.2rem;
+}
+
+.section4-form textarea{
+    background-color: transparent;
+    border-color: rgb(204,153,102);
+    border: none;
+    border: 2px solid transparent;
+    border-bottom: 2px solid rgb(204,153,102);
+    /* max-width: 460px;
+    max-height: 212px;  */
+    width: 100%;
+    padding: 5px 20px;
+    resize: none;
+    box-sizing: border-box;
+    outline: none;
+}
+textarea:focus{
+   border: 2px solid rgb(204,153,102);
+   box-shadow: rgb(252, 184, 117) 0px 0px 29px 0px;
+}
+
+.section4-contract-us h1{
+    font-size: 3rem;
+    margin-block: 10px;
+    color: rgb(0,102,102);
+}
+.section4-contract-us p{
+    line-height: 2.3;
+    font-size: 1rem;
+}
+.section4-contract-us span{
+    color: rgb(0,102,102);
+}
+.section4-contract-us button{
+    margin-block: 15px;
+    font-size: 1rem;
+    padding: 20px 60px;
+    background-color: rgb(0,102,102);
+    cursor: pointer;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+.section4-contract-us button:hover{
+    background-color: rgb(16, 157, 157);
+}
+.section4-contract-us button i{
+    font-size: 1rem;
+    padding-right: 10px;
+}
+.section4-submit{
+    display: flex;
+    justify-content: flex-end;
+}
+.section4-form span{
+    color: white;
+    margin-block: 20px;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+.section4-form span:hover{
+    color: rgb(231, 169, 107);
+}
+/* footer started frome here */
+.section5-footer{
+    padding-block: 50px;
+    background-color: #d4a373;
+}
+.section5-footer p{
+    text-align: center;
+    color: white;
+}
